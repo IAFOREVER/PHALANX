@@ -1,0 +1,16 @@
+# Entornos virtuales y temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+
+# Claves criptográficas privadas (Protección Absoluta)
+*.key
+*.pem
+private/
+
+# Archivos de depuración y temporales
+*.tmp
+temp/

@@ -1,0 +1,41 @@
+ACUERDO DE LICENCIA DE USUARIO FINAL (EULA) — PHALANX SOVEREIGN DEVSECOPS
+==============================================================================
+Propietario y Titular de Derechos: IAFOREVER
+Software: Phalanx Suite v3.0.0 Commercial Release
+Todos los derechos reservados © 2026 IAFOREVER.
+
+POR FAVOR LEA ESTE ACUERDO CUIDADOSAMENTE ANTES DE INSTALAR O UTILIZAR ESTE SOFTWARE.
+
+1. CONCESIÓN DE LICENCIA COMERCIAL
+IAFOREVER concede al usuario o entidad licenciataria una licencia limitada, no exclusiva,
+intransferible y revocable para ejecutar el software Phalanx con fines de auditoría de
+seguridad, pentesting defensivo y verificación de cumplimiento conforme al nivel de
+suscripción adquirido (TRIAL, PRO o ENTERPRISE) y vinculado al Hardware ID autorizado.
+
+2. RESTRICCIONES DE INGENIERÍA INVERSA Y PROPIEDAD INTELECTUAL
+Queda expresamente prohibido:
+  a) Descompilar, desensamblar, aplicar ingeniería inversa, descifrar o intentar
+     derivar el código fuente o los algoritmos internos del binario compilado.
+  b) Modificar, adaptar, traducir o crear obras derivadas basadas en este software.
+  c) Eludir, desactivar, alterar o falsear los mecanismos de validación criptográfica,
+     sellos monotónicos de tiempo (Anti-Time-Travel), firmas Ed25519 o controles
+     de enclavamiento causal por hardware (Node-Locking).
+  d) Distribuir, sublicenciar, alquilar, arrendar o prestar la clave privada de
+     autoridad o tokens generados para terceros sin autorización escrita de IAFOREVER.
+
+3. SOBERANÍA Y PRIVACIDAD DE DATOS
+Phalanx es una suite de ejecución soberana e hiperlocal (on-premise). El software no
+transmite código fuente, credenciales ni reportes a servidores de terceros sin
+autorización explícita del usuario. Las validaciones de licencia operan de forma
+matemática y offline mediante criptografía asimétrica Ed25519.
+
+4. LÍMITE DE RESPONSABILIDAD Y GARANTÍA
+El software se suministra "TAL CUAL" ("AS IS"). IAFOREVER no asume responsabilidad
+por daños directos o indirectos, pérdidas de información o interrupciones de negocio
+derivadas del uso indebido de las herramientas de auditoría o de remediación.
+
+5. JURISDICCIÓN Y GOBERNANZA
+Este acuerdo se rige por las leyes internacionales de propiedad intelectual y los
+tratados de protección de software propietario. Cualquier controversia será resuelta
+bajo los tribunales competentes de la sede legal de IAFOREVER.
+==============================================================================
