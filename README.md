@@ -18,14 +18,14 @@
 </p>
 
 <p align="center">
-  <a href="assets/phalanx_demo_es.mp4" title="Clic para reproducir video de demostración oficial en 1080p 60fps">
-    <img src="assets/phalanx_video_player_card.png" alt="Phalanx Video Demo Player" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
+  <a href="https://phalanx.surge.sh/readme" title="Ver Demostración Oficial en Vivo con Audio (1080p 60fps)">
+    <img src="assets/phalanx_demo.gif" alt="Phalanx Demo en Vivo" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
   </a>
 </p>
 <p align="center">
-  <a href="assets/phalanx_demo_es.mp4"><b>▶ Ver en Español (1080p 60fps)</b></a> &nbsp;&bull;&nbsp; 
-  <a href="assets/phalanx_demo_en.mp4"><b>▶ Watch in English (1080p 60fps)</b></a> &nbsp;&bull;&nbsp;
-  <a href="https://phalanx.surge.sh"><b>🌐 Simulador Web en Vivo</b></a>
+  <a href="https://phalanx.surge.sh/readme"><b>🎬 Reproductor Web Oficial con Audio</b></a> &nbsp;&bull;&nbsp; 
+  <a href="https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/assets/phalanx_demo_es.mp4" target="_blank"><b>▶ Video HD Español (1080p MP4)</b></a> &nbsp;&bull;&nbsp; 
+  <a href="https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/assets/phalanx_demo_en.mp4" target="_blank"><b>▶ Video HD English (1080p MP4)</b></a>
 </p>
 
 ---
