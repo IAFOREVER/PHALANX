@@ -11,20 +11,41 @@
 <p align="center">
   <a href="https://pypi.org/project/phalanx-audit/"><img src="https://img.shields.io/badge/PyPI-phalanx--audit-3776AB?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI Package" /></a>
   <a href="#-instalación-rápida"><img src="https://img.shields.io/badge/Agent_Skill-npx_skills-00F0FF?style=for-the-badge&logo=raycast&logoColor=black" alt="Agent Skill" /></a>
-  <a href="https://phalanx.surge.sh"><img src="https://img.shields.io/badge/Demo_Web-phalanx.surge.sh-F59E0B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Demo Web" /></a>
+  <a href="https://phalanx.surge.sh/"><img src="https://img.shields.io/badge/Landing_Web-phalanx.surge.sh-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Landing Web Oficial" /></a>
+  <a href="https://phalanx.surge.sh/demostracion"><img src="https://img.shields.io/badge/Demo_1080p-Audio_Oficial-F59E0B?style=for-the-badge&logo=youtube&logoColor=black" alt="Demostración con Audio" /></a>
   <img src="https://img.shields.io/badge/Velocidad-%3C_25s-10B981?style=for-the-badge" alt="SLA <25s" />
   <img src="https://img.shields.io/badge/Falsos_Positivos-0.00%25-6366F1?style=for-the-badge" alt="0.00% False Positivos" />
   <img src="https://img.shields.io/badge/Licencia-Comercial_EULA-E11D48?style=for-the-badge" alt="Comercial EULA" />
 </p>
 
 <p align="center">
-  <a href="https://phalanx.surge.sh/demostracion" target="_blank" title="Ver Demostración Oficial en Vivo con Audio (1080p 60fps)">
-    <img src="assets/phalanx_demo.gif" alt="Phalanx Demo en Vivo" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
+  <a href="https://phalanx.surge.sh/demostracion" target="_blank" title="Ver Demostración Oficial en Vivo con Audio en phalanx.surge.sh/demostracion (Ctrl+Clic para abrir en nueva pestaña)">
+    <img src="assets/phalanx_demo.gif" alt="Phalanx Demo en Vivo (Presiona Ctrl+Clic para abrir en nueva pestaña)" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
   </a>
 </p>
+
 <p align="center">
-  <a href="https://phalanx.surge.sh/demostracion" target="_blank"><b>🎬 Reproductor Web Oficial con Audio</b></a> &nbsp;&bull;&nbsp; 
-  <a href="https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/assets/phalanx_demo_es.mp4" target="_blank"><b>▶ Video HD (1080p 60fps MP4)</b></a>
+  <a href="https://phalanx.surge.sh/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🌐_Sitio_Oficial_&_Landing-phalanx.surge.sh-00F0FF?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Landing Page Oficial" />
+  </a>
+  &nbsp;
+  <a href="https://phalanx.surge.sh/demostracion" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🎬_Reproductor_Web-Demo_con_Audio-F59E0B?style=for-the-badge&logo=youtube&logoColor=black" alt="Demo en Vivo" />
+  </a>
+  &nbsp;
+  <a href="https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/assets/phalanx_demo_es.mp4" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/▶_Descargar_Video-1080p_60fps_MP4-10B981?style=for-the-badge" alt="Descargar Video MP4" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://phalanx.surge.sh/" target="_blank" rel="noopener noreferrer"><b>🌐 Explorar Landing Page Oficial (phalanx.surge.sh) ↗</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="https://phalanx.surge.sh/demostracion" target="_blank" rel="noopener noreferrer"><b>🎬 Reproductor Web de Demostración con Audio ↗</b></a>
+  &nbsp;&bull;&nbsp;
+  <a href="https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/assets/phalanx_demo_es.mp4" target="_blank" rel="noopener noreferrer"><b>▶ Video Directo MP4</b></a>
+  <br />
+  <sub><i>💡 <b>Navegación:</b> Para mantener este repositorio abierto mientras visitas la web o la demo, utiliza <b>Ctrl + Clic</b> (o el botón central del ratón).</i></sub>
 </p>
 
 ---
