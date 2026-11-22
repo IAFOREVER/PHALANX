@@ -1,4 +1,4 @@
-# 🛡️ Phalanx — Suite Autónoma de DevSecOps & Certificación EGM
+<h1 align="center" style="font-size: 1.65rem; border-bottom: none; margin-bottom: 14px;">🛡️ Phalanx — Suite Autónoma de DevSecOps &amp; Certificación EGM</h1>
 
 <p align="center">
   <img src="assets/banner01.jpg" alt="Phalanx Header Banner" width="100%" style="border-radius: 14px;" />
@@ -18,9 +18,14 @@
 </p>
 
 <p align="center">
-  <a href="assets/phalanx_demo_es.mp4"><b>🇪🇸 Video Demostración Épico (Español 1080p 60fps)</b></a> &nbsp;&bull;&nbsp; 
-  <a href="assets/phalanx_demo_en.mp4"><b>🇺🇸 Epic Demo Video (English 1080p 60fps)</b></a> &nbsp;&bull;&nbsp;
-  <a href="https://phalanx.surge.sh"><b>🌐 Simulador en Vivo</b></a>
+  <a href="assets/phalanx_demo_es.mp4" title="Clic para reproducir video de demostración oficial en 1080p 60fps">
+    <img src="assets/phalanx_video_player_card.png" alt="Phalanx Video Demo Player" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.6);" />
+  </a>
+</p>
+<p align="center">
+  <a href="assets/phalanx_demo_es.mp4"><b>▶ Ver en Español (1080p 60fps)</b></a> &nbsp;&bull;&nbsp; 
+  <a href="assets/phalanx_demo_en.mp4"><b>▶ Watch in English (1080p 60fps)</b></a> &nbsp;&bull;&nbsp;
+  <a href="https://phalanx.surge.sh"><b>🌐 Simulador Web en Vivo</b></a>
 </p>
 
 ---
