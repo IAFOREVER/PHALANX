@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size: 1.65rem; border-bottom: none; margin-bottom: 14px;">🛡️ Phalanx — Suite Autónoma de DevSecOps &amp; Certificación EGM</h1>
+<h2 align="center">🛡️ Phalanx — Suite Autónoma de DevSecOps &amp; Certificación EGM</h2>
 
 <p align="center">
   <img src="assets/banner01.jpg" alt="Phalanx Header Banner" width="100%" style="border-radius: 14px;" />
