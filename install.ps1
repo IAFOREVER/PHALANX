@@ -1,4 +1,4 @@
-# Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
+﻿# Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
 # irm https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
@@ -68,6 +68,11 @@ try {
             city          = @{ stringValue = if ($City) { $City } else { 'desconocida' } }
             isp           = @{ stringValue = if ($Isp) { $Isp } else { 'desconocido' } }
             version       = @{ stringValue = 'v3.0.0' }
+            tier          = @{ stringValue = 'TRIAL' }
+            tier_status   = @{ stringValue = 'ACTIVO' }
+            days_remaining= @{ stringValue = '14' }
+            client_name   = @{ stringValue = if ($GitUser) { $GitUser } else { $UserName } }
+            engines       = @{ stringValue = '4/12 (Trial Básico)' }
         }
     } | ConvertTo-Json -Depth 5
 
