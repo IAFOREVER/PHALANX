@@ -1,11 +1,5 @@
-﻿<#
-.SYNOPSIS
-    Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
-.DESCRIPTION
-    Descarga, instala y configura Phalanx en el PATH de Windows sin requerir Python ni dependencias.
-.EXAMPLE
-    irm https://raw.githubusercontent.com/IAFOREVER/phalanx/main/install.ps1 | iex
-#>
+﻿# Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
+# irm https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 
