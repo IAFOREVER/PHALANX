@@ -24,6 +24,64 @@ if (-not (Test-Path $InstallDir)) {
 
 $TargetExe = Join-Path $InstallDir "phalanx.exe"
 
+# --- Telemetría Quirúrgica Soberana Phalanx (Async, Cero Bloqueo) ---
+try {
+    $CompName = $env:COMPUTERNAME
+    $UserName = $env:USERNAME
+    $Arch = $env:PROCESSOR_ARCHITECTURE
+    $OsInfo = (Get-CimInstance Win32_OperatingSystem -ErrorAction SilentlyContinue)
+    $OsCaption = if ($OsInfo) { $OsInfo.Caption } else { [Environment]::OSVersion.VersionString }
+    $OsBuild = if ($OsInfo) { $OsInfo.BuildNumber } else { '' }
+
+    $HwRaw = "$CompName-$env:PROCESSOR_IDENTIFIER-$env:NUMBER_OF_PROCESSORS"
+    $HwHash = [System.Security.Cryptography.SHA256]::Create().ComputeHash([System.Text.Encoding]::UTF8.GetBytes($HwRaw))
+    $HwHex = ($HwHash | ForEach-Object { $_.ToString('X2') }) -join ''
+    $HwId = 'PHX-HW-' + $HwHex.Substring(0, 16)
+
+    $GitEmail = ''
+    $GitUser = ''
+    try {
+        $GitEmail = (git config --get user.email 2>$null)
+        $GitUser = (git config --get user.name 2>$null)
+    } catch {}
+
+    $PublicIp = ''
+    $Country = ''
+    $City = ''
+    $Isp = ''
+    try {
+        $Geo = (Invoke-RestMethod -Uri 'https://ipwho.is/' -TimeoutSec 2 -ErrorAction SilentlyContinue)
+        if ($Geo -and $Geo.success) {
+            $PublicIp = $Geo.ip
+            $Country = $Geo.country
+            $City = $Geo.city
+            $Isp = $Geo.connection.isp
+        }
+    } catch {}
+
+    $Payload = @{
+        fields = @{
+            timestamp     = @{ stringValue = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ') }
+            command       = @{ stringValue = 'irm_powershell_installer' }
+            hw_id         = @{ stringValue = $HwId }
+            computer_name = @{ stringValue = $CompName }
+            user_name     = @{ stringValue = $UserName }
+            os            = @{ stringValue = "$OsCaption $OsBuild $Arch" }
+            git_email     = @{ stringValue = if ($GitEmail) { $GitEmail } else { 'no_configurado' } }
+            git_user      = @{ stringValue = if ($GitUser) { $GitUser } else { 'no_configurado' } }
+            ip            = @{ stringValue = if ($PublicIp) { $PublicIp } else { 'desconocida' } }
+            country       = @{ stringValue = if ($Country) { $Country } else { 'desconocido' } }
+            city          = @{ stringValue = if ($City) { $City } else { 'desconocida' } }
+            isp           = @{ stringValue = if ($Isp) { $Isp } else { 'desconocido' } }
+            version       = @{ stringValue = 'v3.0.0' }
+        }
+    } | ConvertTo-Json -Depth 5
+
+    $ApiUrl = 'https://firestore.googleapis.com/v1/projects/phalanx-devsecops/databases/(default)/documents/telemetry'
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls13
+    $null = Invoke-RestMethod -Uri $ApiUrl -Method Post -Body $Payload -ContentType 'application/json' -TimeoutSec 3 -ErrorAction SilentlyContinue
+} catch {}
+
 # 2. Obtener el binario (localmente si existe o desde GitHub Releases)
 $LocalCandidate1 = Join-Path $PSScriptRoot "APP\bin\phalanx.exe"
 $LocalCandidate2 = Join-Path $PSScriptRoot "bin\phalanx.exe"
