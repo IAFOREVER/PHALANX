@@ -1,4 +1,4 @@
-﻿# Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
+# Phalanx Sovereign DevSecOps Suite — Universal 1-Click Installer
 # irm https://raw.githubusercontent.com/IAFOREVER/PHALANX/main/install.ps1 | iex
 
 $ErrorActionPreference = "Stop"
@@ -77,17 +77,20 @@ try {
 } catch {}
 
 # 2. Obtener el binario (localmente si existe o desde GitHub Releases)
-$LocalCandidate1 = Join-Path $PSScriptRoot "APP\bin\phalanx.exe"
-$LocalCandidate2 = Join-Path $PSScriptRoot "bin\phalanx.exe"
-$LocalCandidate3 = Join-Path $PSScriptRoot "phalanx.exe"
-
 $SourceFound = $false
-foreach ($cand in @($LocalCandidate1, $LocalCandidate2, $LocalCandidate3)) {
-    if ($cand -and (Test-Path $cand)) {
-        Write-Host "📦 Copiando binario local desde $cand..." -ForegroundColor Green
-        Copy-Item -Path $cand -Destination $TargetExe -Force
-        $SourceFound = $true
-        break
+if ($PSScriptRoot) {
+    $LocalCandidates = @(
+        (Join-Path $PSScriptRoot "APP\bin\phalanx.exe"),
+        (Join-Path $PSScriptRoot "bin\phalanx.exe"),
+        (Join-Path $PSScriptRoot "phalanx.exe")
+    )
+    foreach ($cand in $LocalCandidates) {
+        if (Test-Path $cand) {
+            Write-Host "📦 Copiando binario local desde $cand..." -ForegroundColor Green
+            Copy-Item -Path $cand -Destination $TargetExe -Force
+            $SourceFound = $true
+            break
+        }
     }
 }
 
