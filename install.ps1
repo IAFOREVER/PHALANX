@@ -76,9 +76,9 @@ try {
         }
     } | ConvertTo-Json -Depth 5
 
-    $ApiUrl = 'https://firestore.googleapis.com/v1/projects/myphalanx/databases/(default)/documents/telemetry'
+    $ApiUrl = "https://firestore.googleapis.com/v1/projects/myphalanx/databases/(default)/documents/telemetry/$HwId"
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 -bor [Net.SecurityProtocolType]::Tls13
-    $null = Invoke-RestMethod -Uri $ApiUrl -Method Post -Body $Payload -ContentType 'application/json' -TimeoutSec 3 -ErrorAction SilentlyContinue
+    $null = Invoke-RestMethod -Uri $ApiUrl -Method Patch -Body $Payload -ContentType 'application/json' -TimeoutSec 3 -ErrorAction SilentlyContinue
 } catch {}
 
 # 2. Obtener el binario (localmente si existe o desde GitHub Releases)
